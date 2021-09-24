@@ -1,0 +1,102 @@
+.container {
+  background-color: $veryDarkBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  position: relative;
+  z-index: 3;
+
+  &__title {
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 7rem;
+    letter-spacing: 5px;
+  }
+
+  &__clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+
+    .time {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0rem 1rem;
+    }
+
+    .square {
+      height: 9rem;
+      width: 9rem;
+      background: $darkDesaturateBlue;
+      border-radius: 10px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 1);
+      overflow: hidden;
+      position: relative;
+      z-index: 5;
+
+      .left-circle {
+        height: 10px;
+        width: 10px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        left: -5px;
+        bottom: 50%;
+        z-index: 1;
+      }
+
+      .right-circle {
+        height: 10px;
+        width: 10px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        right: -5px;
+        bottom: 50%;
+        z-index: 1;
+      }
+
+      .line {
+        height: 1.5px;
+        width: 9rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        bottom: 0;
+        top: 47%;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    .time-title {
+      color: $grayishBlue;
+      margin-top: 2rem;
+      letter-spacing: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .hills {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+}

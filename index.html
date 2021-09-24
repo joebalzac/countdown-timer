@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="stars" src="/images/bg-stars.svg" alt="" />
+      <h1 class="container__title">We're launching soon</h1>
+
+      <div id="clockdiv"></div>
+
+      <div id="clock" class="container__clock">
+        <div class="time">
+          <div class="square" id="days">
+            <span class="left-circle"></span>
+            <span class="right-circle"></span>
+            <span class="line"></span>
+          </div>
+          <h4 class="time-title">Days</h4>
+        </div>
+
+        <div class="time">
+          <div class="square" id="hours">
+            <span class="left-circle"></span>
+            <span class="right-circle"></span>
+            <span class="line"></span>
+          </div>
+
+          <h4 class="time-title">Hours</h4>
+        </div>
+
+        <div class="time">
+          <div class="square" id="minutes">
+            <span class="left-circle"></span>
+            <span class="right-circle"></span>
+            <span class="line"></span>
+          </div>
+          <h4 class="time-title">Minutes</h4>
+        </div>
+
+        <div class="time">
+          <div class="square" id="seconds">
+            <span class="left-circle"></span>
+            <span class="right-circle"></span>
+            <span class="line"></span>
+          </div>
+          <h4 class="time-title">Seconds</h4>
+        </div>
+      </div>
+
+      <img class="hills" src="/images/pattern-hills.svg" alt="" />
+    </div>
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>
